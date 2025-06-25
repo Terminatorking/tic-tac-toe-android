@@ -132,6 +132,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void resetGame(boolean isCallFromResetButton) {
+        playerOneTurn.setVisibility(View.VISIBLE);
+        playerTwoTurn.setVisibility(View.INVISIBLE);
         count = 0;
         if (isCallFromResetButton) {
             numberOFPlayerOneWins = 0;
